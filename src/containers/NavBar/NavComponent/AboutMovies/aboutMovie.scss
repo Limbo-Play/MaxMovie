@@ -1,0 +1,57 @@
+@import "../../../../helpers/helper.scss";
+@import "../../../../styles/colors.scss", "../../../../styles/fonts.scss";
+
+.mainTitleAboutMovie {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 805px;
+  overflow-y: scroll;
+
+  .movieInfoWrapper {
+    padding: 32px;
+    background-color: $matches-gray;
+    max-width: 465px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    p {
+      @include rubik24Bold;
+      color: $green-accent;
+      margin-bottom: 5px;
+    }
+    .genresWrapper {
+      @include rubik18Regular;
+      color: $white-accent;
+      opacity: 0.5;
+    }
+    .yearWrapper {
+      @include rubik18Regular;
+      color: $white-accent;
+    }
+    .descriptionWrapper {
+      @include rubik16Regular;
+    }
+  }
+}
+.goBackBtn {
+  display: flex;
+  position: absolute;
+  left: 150px;
+  cursor: pointer;
+  top: 100px;
+  p {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .mainTitleAboutMovie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+}

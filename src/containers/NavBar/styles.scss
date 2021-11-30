@@ -1,0 +1,116 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss", "../../styles/fonts.scss";
+
+.appPosition {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: $navbar-gray;
+}
+
+.navPosition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 0 48px;
+  width: 124px;
+  background-color: $navbar-gray;
+  .maxM {
+    @include rubik24Bold;
+    color: $green-accent;
+    margin: 90px 0 80px;
+  }
+  ul {
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 70px 0 0;
+    }
+  }
+  .logoutPos {
+    cursor: pointer;
+  }
+  .logoutPos:hover {
+    filter: saturate(40);
+  }
+}
+
+.mainAppBackground {
+  max-width: 1920px;
+  width: 100%;
+  max-height: 1080px;
+  height: 100vh;
+  background-image: url(../../assets/TopBar.png);
+  background-repeat: no-repeat;
+  background-position: unset;
+  background-size: cover;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 20px;
+  justify-content: flex-start;
+}
+
+.selectedLink:hover {
+  filter: saturate(40);
+}
+.selectedLink-active {
+  filter: saturate(40);
+}
+
+@media screen and (max-width: 735px) {
+  .appPosition {
+    display: flex;
+    flex-direction: column;
+  }
+  .navPosition {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin: 15px;
+    padding: 0;
+    background-color: $navbar-gray;
+    .maxM {
+      @include rubik24Bold;
+      color: $green-accent;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 65vw;
+      li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+      }
+    }
+  }
+  .mainAppBackground {
+    max-width: 1920px;
+    width: 100%;
+    max-height: 1080px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 30px;
+    justify-content: flex-start;
+  }
+}

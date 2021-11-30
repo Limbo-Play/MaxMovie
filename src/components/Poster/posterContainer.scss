@@ -1,0 +1,32 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.card {
+  width: 275px;
+  height: 415px;
+  position: relative;
+}
+
+.front,
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.front {
+  z-index: 2;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  width: 275px;
+  height: 415px;
+}
+
+.infoLogo {
+  position: absolute;
+  top: 385px;
+  left: 235px;
+  z-index: 3;
+}

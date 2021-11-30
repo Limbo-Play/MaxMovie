@@ -1,0 +1,19 @@
+@import "./helpers/helper.scss";
+@import "./styles/colors.scss", "./styles/fonts.scss";
+
+.mainBackground {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets//mainBackground.png);
+  background-repeat: no-repeat;
+  background-position: unset;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  object-fit: cover;
+}

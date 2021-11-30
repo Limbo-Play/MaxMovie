@@ -1,0 +1,58 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.wrapperPosition {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-bottom: 24px;
+
+  .descriptionName {
+    @include rubik18Regular;
+    color: $white-accent;
+  }
+  .description {
+    @include rubik16Regular;
+    color: $white-accent;
+    opacity: 0.6;
+    display: flex;
+  }
+}
+
+.movieWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 24px;
+  width: 316px;
+  max-height: 616px;
+  height: 100%;
+  padding: 21px 21px 32px;
+  background-color: $matches-gray;
+  .posterForDescription {
+    border-radius: 15px;
+    max-width: 275px;
+    width: 100vw;
+    height: 425px;
+  }
+  .labelPosition {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.labelMovie {
+  padding: 5px;
+  border-radius: 12px;
+  @include rubik14Bold;
+  color: $primary-gray;
+  margin: 10px 5px 20px;
+}
+
+@media screen and (max-width: 975px) {
+  .movieWrapper {
+    margin: 0 0 20px;
+  }
+}

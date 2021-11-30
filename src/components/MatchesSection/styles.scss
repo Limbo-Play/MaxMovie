@@ -1,0 +1,24 @@
+@import "../../styles//colors.scss";
+@import "../../styles//fonts.scss";
+
+.matchesBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $matches-gray;
+  padding: 7px 7px 7px 30px;
+  border-radius: 16px;
+  max-width: 346px;
+  width: 100%;
+  height: 50px;
+  margin: 50px 0 55px;
+
+  .ourMatchesBtn {
+    @include rubik16Bold;
+    color: $white-accent;
+    background-color: $matches-gray;
+    border-radius: 10px;
+    border: none;
+  }
+}

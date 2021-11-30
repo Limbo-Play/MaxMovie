@@ -1,0 +1,34 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss", "../../styles/fonts.scss";
+
+.centerPositionColumn {
+  @include centerPositionColumn;
+}
+
+.forgotPassPosition {
+  margin-top: 60px;
+}
+
+.singInQuestion {
+  @include rubik17Medium;
+  color: $white-accent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signUpButton {
+  @include rubik17Medium;
+  background: none;
+  border: none;
+  color: $green-accent;
+  cursor: pointer;
+}
+
+.inputError {
+  @include rubik14Normal;
+  color: $light-red;
+  margin-top: 6px;
+  width: 100%;
+  text-align: left;
+  word-wrap: break-word;
+}

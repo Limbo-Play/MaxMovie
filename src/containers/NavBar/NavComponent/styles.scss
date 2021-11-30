@@ -1,0 +1,108 @@
+@import "../../../helpers/helper.scss";
+@import "../../../styles/colors.scss", "../../../styles/fonts.scss";
+
+.discoverPosition {
+  width: 315px;
+}
+.posterPosition {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $matches-gray;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+
+  .streamingService {
+    max-width: 74px;
+    max-height: 40px;
+    margin: 9px 0;
+    border-radius: 0 !important;
+  }
+  .movieName {
+    @include rubik18Bold;
+    color: $white-accent;
+    margin: 11px 0 7px;
+  }
+  .movieYear {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.likeRewind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0;
+  background-color: $matches-gray;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  width: 315px;
+  img {
+    margin: 16px 0 16px;
+    cursor: pointer;
+  }
+  img:hover {
+    opacity: 0.8;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.filtersPosition {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.matchesWrapper {
+  @include rubik16Bold;
+  max-width: 605px;
+  width: 100%;
+  max-height: 400px;
+  border-radius: 20px;
+  margin: 5px 0 5px;
+  display: flex;
+  padding: 20px 24px 14px 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $matches-gray;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  span {
+    margin: 0 25px;
+    .yearAndRate {
+      @include rubik16Regular;
+      margin-top: 20px;
+      color: $green-accent;
+    }
+  }
+}
+
+.slick-slider {
+  width: 319px;
+}
+
+.likedMoviePosition {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 735px) {
+  .posterPosition {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .matchesWrapper {
+    span {
+      margin: 0 15px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss", "../../styles/fonts.scss";
+
+.signUpButton {
+  margin-top: 44px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.centerPositionColumn {
+  @include centerPositionColumn;
+}
+
+.inputError {
+  color: $light-red;
+  margin-top: 6px;
+  @include rubik14Normal;
+}

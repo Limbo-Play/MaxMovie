@@ -1,0 +1,73 @@
+@mixin rubik12Medium {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font: 400;
+}
+@mixin rubik14Normal {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+@mixin rubik14Bold {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+@mixin rubik16Regular {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+@mixin rubik16Medium {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+@mixin rubik16Bold {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+@mixin rubik17Regular {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+@mixin rubik17Medium {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+@mixin rubik18Regular {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+@mixin rubik18Medium {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+@mixin rubik18Bold {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin rubik20Bold {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+@mixin rubik24Bold {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin rubik48Normal {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}

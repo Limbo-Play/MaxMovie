@@ -1,0 +1,34 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss", "../../styles/fonts.scss";
+
+.recoverPagePosition {
+  @include centerPositionColumn;
+  .createNewPass {
+    @include rubik18Bold;
+    margin: 10px 0 40px;
+    text-align: center;
+  }
+  form {
+    max-width: 305px;
+    width: 100%;
+  }
+}
+.resetBtnPos {
+  margin-top: 45px;
+}
+
+.inputEmailContainer {
+  @include centerPositionColumn;
+  text-align: center;
+  img {
+    margin-top: 40px;
+  }
+  span {
+    @include rubik18Bold;
+    margin: 22px 0;
+  }
+  .textStyle {
+    @include rubik16Medium;
+    margin-bottom: 30px;
+  }
+}

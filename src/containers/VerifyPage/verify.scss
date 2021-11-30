@@ -1,0 +1,32 @@
+@import "../../helpers/helper.scss";
+@import "../../styles/colors.scss", "../../styles/fonts.scss";
+
+.centerPositionColumn {
+  @include centerPositionColumn;
+}
+
+.verifyYourEmail {
+  @include rubik17Medium;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.enterVerifyCodeSpan {
+  @include rubik16Bold;
+  font-weight: 500;
+  text-align: center;
+}
+
+.resendVerifyBtn {
+  cursor: pointer;
+  background: none;
+  color: $green-accent;
+  border: none;
+  @include rubik16Bold;
+  margin: 24px 0 39px;
+}
+
+.invalidCodeSpan {
+  @include rubik16Bold;
+  color: $dark-red;
+}

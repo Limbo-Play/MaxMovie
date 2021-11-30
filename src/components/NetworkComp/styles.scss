@@ -1,0 +1,116 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+@import "../../helpers/helper.scss";
+
+.networkWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 605px;
+  width: 100vw;
+  background-color: $matches-gray;
+  border-radius: 20px;
+  margin: 15px 0 15px;
+  padding: 21px 32px 32px 40px;
+}
+
+.sectionTitle {
+  @include rubik16Medium;
+  color: $green-accent;
+}
+
+.networksSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 540px;
+  width: 100%;
+  height: 80px;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span {
+      display: block;
+    }
+    label {
+      margin-left: 23px;
+    }
+  }
+}
+
+.typeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 540px;
+  width: 100%;
+  height: 80px;
+  span {
+    @include rubik18Medium;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    label {
+      margin-left: 23px;
+    }
+  }
+}
+
+.categoriesSpan {
+  cursor: pointer;
+  margin: 16px 8px 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  width: fit-content;
+  height: 55px;
+  border-radius: 17px;
+  background-color: $light-black;
+  @include rubik16Regular;
+  padding: 0 15px;
+  .iconPosition {
+    .namePosition {
+      color: $categories-gray;
+    }
+  }
+}
+.categoriesSpan {
+  .iconPosition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .namePosition {
+      margin-left: 8px;
+    }
+  }
+}
+.categoriesSpanActive {
+  background-color: $green-accent;
+  .iconPosition {
+    .namePosition {
+      color: $white-accent;
+    }
+  }
+}
+@media screen and (max-width: 475px) {
+  .networksSection {
+    div {
+      div {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .networkWrapper {
+    width: 80vw;
+  }
+}

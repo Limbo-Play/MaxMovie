@@ -1,0 +1,23 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+.btnStyle {
+  @include rubik18Regular;
+  position: absolute;
+  top: 64px;
+  left: 145px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.myLikesBtn {
+  @include rubik16Bold;
+  color: $white-accent;
+  background-color: $green-accent;
+  border-radius: 10px;
+  border: none;
+  max-width: 163px;
+  width: 100%;
+  height: 34px;
+  cursor: not-allowed;
+}
