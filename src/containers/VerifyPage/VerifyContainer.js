@@ -5,7 +5,6 @@ import {verifySubmit, reSendVerify} from "../../redux/actions/signUpActions"
 import VerifyLogo from "../../assets/VerifyLogo.png";
 import { useDispatch, useSelector } from "react-redux";
 import InputVerifyCode from "../../components/InputComponents/InputVerifyCode"
-import { useRef } from "react";
 function VerifyContainer() {
   const userNameForVerify = useSelector((store) => store.signUpReducer)
   const dispatch = useDispatch();

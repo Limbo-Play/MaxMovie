@@ -1,6 +1,6 @@
 import { actionTypes } from "../actionTypes";
 import { Auth } from "aws-amplify";
-import { startLoading, finishLoading } from "../actions/loadingAction";
+import { startLoading, finishLoading } from "./loadingAction";
 import { loadingTypes } from "../loadingTypes";
 
 export function login({ login, password }) {

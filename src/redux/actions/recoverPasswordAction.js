@@ -1,5 +1,5 @@
 import { actionTypes } from "../actionTypes";
-import { startLoading, finishLoading } from "../actions/loadingAction";
+import { startLoading, finishLoading } from "./loadingAction";
 import { loadingTypes } from "../loadingTypes";
 import { Auth } from "aws-amplify";
 

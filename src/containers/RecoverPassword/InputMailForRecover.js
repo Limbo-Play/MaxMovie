@@ -39,7 +39,7 @@ export default function InputEmailForRecover() {
           className="handleInput"
           type="email"
           {...register("email")}
-        ></input>
+        />
         <p className="inputError">{errors.email?.message}</p>
         <div className="resetBtnPos">
           <Button disabled={false} value={"Reset password"} />

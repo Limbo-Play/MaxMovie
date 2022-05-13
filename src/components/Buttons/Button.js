@@ -11,7 +11,7 @@ export default function Button({ disabled, value, onSubmit, onClick }) {
       onClick={onClick}
       type="submit"
       value={value}
-    ></input>
+    />
   );
 }
 
