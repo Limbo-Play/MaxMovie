@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Discover from "./Discover";
 import { useSelector } from "react-redux";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import "./styles.scss";
 import { useDispatch } from "react-redux";
 import dislike from "../../../assets/dislike.png";
@@ -13,7 +13,6 @@ import {
   likeAMovie,
   disLikeAMovie,
 } from "../../../redux/actions/likeAndDislikeAction";
-import { currentMovie } from "../../../redux/actions/getMoviesAction";
 
 export default function DiscoverCarousel() {
   const dispatch = useDispatch();
@@ -21,9 +20,7 @@ export default function DiscoverCarousel() {
   const { movies } = useSelector(({ moviesReducer }) => ({
     movies: moviesReducer.movies,
   }));
-  useEffect(() => {
-    dispatch(currentMovie(sliderRef.current.props.children[0].props));
-  }, [dispatch]);
+
   function slideToId(sliderRef) {
     return sliderRef.current.props.children[
       sliderRef.current.innerSlider.state.currentSlide
@@ -49,9 +46,10 @@ export default function DiscoverCarousel() {
     speed: 1,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     fade: false,
     arrows: false,
+    swipe: false,
   };
 
   return (

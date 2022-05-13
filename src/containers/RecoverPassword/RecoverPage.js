@@ -33,21 +33,21 @@ export default function RecoverPage() {
           className="handleInput"
           type="number"
           {...register("code")}
-        ></input>
+        />
         <p className="inputError">{errors.code?.message}</p>
         <input
           placeholder="New password"
           className="handleInput"
           type="password"
           {...register("password")}
-        ></input>
+        />
         <p className="inputError">{errors.password?.message}</p>
         <input
           placeholder="Confirm new password"
           className="handleInput"
           type="password"
           {...register("newPassword")}
-        ></input>
+        />
         <p className="inputError">{errors.newPassword?.message}</p>
         <span className="inputError">{error}</span>
         <div className="resetBtnPos" >

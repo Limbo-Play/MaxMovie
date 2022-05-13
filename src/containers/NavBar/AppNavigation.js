@@ -24,7 +24,7 @@ export default function AppNavigationPage() {
     dispatch(getMovies());
     dispatch(getNetworks());
     dispatch(getLikedMovies());
-  }, [dispatch]);
+  }, []);
 
   function handleLogOut() {
     dispatch(signOut());

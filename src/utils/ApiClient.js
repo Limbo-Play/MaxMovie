@@ -94,7 +94,7 @@ class ApiClient {
     )
   }
 
-  async getUser(email, id) {
+  async getUser(email) {
     return await API.get(this.apiName, this.users, {
       queryStringParameters: { email },
     })

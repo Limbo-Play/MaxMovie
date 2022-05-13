@@ -10,7 +10,7 @@ function AboutMoviesWrapper() {
   let { id } = useParams();
 
   const movie = useMemo(() => movies.find((el) => el.id == id), [movies, id]);
- 
+
   return (
     <div className="mainTitleAboutMovie">
       <MovieWrapper
@@ -65,7 +65,7 @@ function AboutMoviesWrapper() {
         {movie.seasons ? (
           <DescriptionWrapper
             descriptionName={"Seasons & Episodes"}
-            description={movie.season.join(", ")}
+            description={movie.seasons.join(", ")}
           />
         ) : (
           ""
