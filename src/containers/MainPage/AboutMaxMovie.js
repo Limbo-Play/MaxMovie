@@ -31,7 +31,8 @@ function AboutMaxMovie() {
         <Slider {...settings}>
           <div className="sliderPosition">
             <header className="sliderAboutText">
-              Discover TV-shows & Movies <br /> to watch together
+              {/*Discover TV-shows & Movies <br /> to watch together*/}
+              Connect with a partner
             </header>
             <img src={logo} alt="logo" />
             <p>Sign up with email</p>

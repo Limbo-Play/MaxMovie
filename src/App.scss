@@ -4,7 +4,7 @@
 .mainBackground {
   width: 100vw;
   height: 100vh;
-  background-image: url(./assets//mainBackground.png);
+  background-image: url(./assets/mainBackground.png);
   background-repeat: no-repeat;
   background-position: unset;
   background-size: cover;
@@ -16,4 +16,8 @@
 
 img {
   object-fit: cover;
+}
+
+.disabled {
+  pointer-events: none;
 }
