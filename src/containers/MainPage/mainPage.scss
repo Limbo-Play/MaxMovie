@@ -44,6 +44,8 @@
 }
 
 .slick-dots {
+  position: relative!important;
+  bottom: 0!important;
   .slick-active {
     opacity: 0.5;
   }

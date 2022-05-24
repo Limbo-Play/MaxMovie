@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../../helpers/valiadtionSchema";
-import MainTitle from "../../components/MainTitle/MainTitle";
 
 export default function SignIn() {
   const loginError = useSelector((store) => store.authReducer.error);
@@ -30,7 +29,6 @@ export default function SignIn() {
   return (
     <>
       <div className="centerPositionColumn">
-        <MainTitle/>
         <h3>Welcome back</h3>
         <form
           onSubmit={handleSubmit(handleInput, onError)}

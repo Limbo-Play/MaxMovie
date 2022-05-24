@@ -2,7 +2,6 @@ import Button from "../../components/Buttons/Button";
 import "./signUpStyle.scss";
 import { useDispatch } from "react-redux";
 import { signUp } from "../../redux/actions/signUpActions";
-import MainTitle from "../../components/MainTitle/MainTitle";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -28,7 +27,6 @@ export default function SignUp() {
   }
   return (
     <div className="centerPositionColumn">
-      <MainTitle />
       <h3>Create an account</h3>
       <form
         onSubmit={handleSubmit(handlePressSumbit, onError)}

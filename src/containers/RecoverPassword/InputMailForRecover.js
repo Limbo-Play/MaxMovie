@@ -1,7 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { inputpMailRecoverSchema } from "../../helpers/valiadtionSchema";
-import MainTitle from "../../components/MainTitle/MainTitle";
 import Button from "../../components/Buttons/Button";
 import verifyLogo from "../../assets/VerifyLogo.png";
 import "./styles.scss";
@@ -23,8 +22,6 @@ export default function InputEmailForRecover() {
   console.log(onSubmit);
   return (
     <div className="inputEmailContainer">
-      <MainTitle />
-
       <img src={verifyLogo} alt="logo" />
       <span> Forgot password? </span>
       <p className="textStyle">
