@@ -1,4 +1,3 @@
-import MainTitle from "../../components/MainTitle/MainTitle";
 import Button from "../../components/Buttons/Button";
 import "./styles.scss";
 import { useForm } from "react-hook-form";
@@ -25,7 +24,6 @@ export default function RecoverPage() {
 
   return (
     <div className="recoverPagePosition">
-      <MainTitle />
       <form onSubmit={handleSubmit(handleRecoverPassword, onError)}>
         <p className="createNewPass">Create new password</p>
         <input

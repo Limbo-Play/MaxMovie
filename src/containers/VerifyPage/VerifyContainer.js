@@ -1,5 +1,4 @@
  import "./verify.scss";
-import MainTitle from "../../components/MainTitle/MainTitle";
 import Button from "../../components/Buttons/Button";
 import {verifySubmit, reSendVerify} from "../../redux/actions/signUpActions"
 import VerifyLogo from "../../assets/VerifyLogo.png";
@@ -35,7 +34,6 @@ function VerifyContainer() {
 
   return (
     <div className="centerPositionColumn">
-      <MainTitle />
       <img src={VerifyLogo} alt="Verify" />
       <span className="verifyYourEmail">Verify your email</span>
       <span className="enterVerifyCodeSpan">

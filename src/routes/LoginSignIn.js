@@ -7,11 +7,12 @@ import RecoverPage from "../containers/RecoverPassword/RecoverPage";
 import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import AppNavigationPage from "../containers/NavBar/AppNavigation";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { refreshSession } from "../redux/actions/authActions";
 import { PrivateRoute, PublicRoute } from "./ProtectedRoute";
 import InputEmailForRecover from "../containers/RecoverPassword/InputMailForRecover";
 import GoBackBtn from "../components/Buttons/GoBackBtn";
+import MainTitle from "../components/MainTitle/MainTitle";
 
 function LoginSignIn() {
   const dispatch = useDispatch();
@@ -26,6 +27,8 @@ function LoginSignIn() {
   }, [dispatch]);
 
   return (
+    <>
+    <MainTitle />
     <Router>
       <Switch>
         <PublicRoute exact path="/">
@@ -56,6 +59,7 @@ function LoginSignIn() {
         </PublicRoute>
       </Switch>
     </Router>
+    </>
   );
 }
 

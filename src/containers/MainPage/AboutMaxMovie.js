@@ -4,7 +4,6 @@ import logo from "../../assets/CarouselCircle1.png";
 import logo2 from "../../assets/CarouselCircle2.png";
 import logo3 from "../../assets/CarouselCircle3.png";
 import dot from "../../assets/Dot.png";
-import MainTitle from "../../components/MainTitle/MainTitle";
 import Slider from "react-slick";
 import "./mainPage.scss";
 
@@ -25,9 +24,7 @@ function AboutMaxMovie() {
     customPaging: (i) => <img src={dot} alt="dot" />,
   };
   return (
-    <>
-      <div className="centerPositionColumn">
-        <MainTitle />
+    <div className="centerPositionColumn">
         <Slider {...settings}>
           <div className="sliderPosition">
             <header className="sliderAboutText">
@@ -53,15 +50,10 @@ function AboutMaxMovie() {
           </div>
         </Slider>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <MainPageFooter />
+        <div style={{marginTop: 70}}>
+          <MainPageFooter />
+        </div>
       </div>
-    </>
   );
 }
 
