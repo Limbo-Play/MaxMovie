@@ -8,7 +8,7 @@ function MainPageFooter() {
             <span className="privacySpan"> By continuing, you are indicating that you accept our <br/>
             Terms of Service and Privacy Policy.</span>
         <span className="singInQuestion"> Already have an account?
-          <Link to="/" className="singInLink">Sing in</Link>
+          <Link to="/login" className="singInLink">Sing in</Link>
         </span>
         </div>
     )
