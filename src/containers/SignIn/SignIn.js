@@ -14,7 +14,7 @@ export default function SignIn() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ resolver: yupResolver(loginSchema) });
+  } = useForm({ resolver: yupResolver(loginSchema), mode: "onChange" });
   const onError = (error) => console.log(error);
 
   function handleInput({ email, password }) {
@@ -49,9 +49,9 @@ export default function SignIn() {
           />
           <p className="inputError">{errors.password?.message}</p>
           <p className="inputError">{loginError}</p>
-          <Link to="/recover" className="forgotPassPosition">
+         {/* <Link to="/recover" className="forgotPassPosition">
             Forgot password
-          </Link>
+          </Link>*/}
           <p className="singInQuestion">
             Not registered yet?{" "}
             <Link to="/registration" className="signUpButton">

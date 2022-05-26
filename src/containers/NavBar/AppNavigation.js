@@ -33,7 +33,7 @@ export default function AppNavigationPage() {
   return (
     <div className="appPosition">
       <aside className="navPosition">
-        <nav>
+        {/*<nav>
           <span className="maxM">MaxM</span>
           <ul>
             <li>
@@ -89,11 +89,12 @@ export default function AppNavigationPage() {
             src={logoutLogo}
             alt="LogOut"
           />
-        </Link>
+        </Link>*/}
       </aside>
 
       <div className="mainAppBackground">
-        <Switch>
+        coming soon...
+        {/*<Switch>
           <Route exact path="/dashboard/discover">
             <DiscoverCarousel />
           </Route>
@@ -107,7 +108,7 @@ export default function AppNavigationPage() {
           <Route exact path="/dashboard/matches">
             <Liked />
           </Route>
-        </Switch>
+        </Switch>*/}
       </div>
     </div>
   );

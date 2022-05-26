@@ -13,7 +13,7 @@ export default function SignUp() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ resolver: yupResolver(signUpSchema) });
+  } = useForm({ resolver: yupResolver(signUpSchema), mode: "onChange" });
   const onError = (error) => console.log(error);
 
   function handlePressSumbit({ email, password, name }) {
@@ -35,6 +35,7 @@ export default function SignUp() {
         <input
           className="handleInput"
           placeholder="Name"
+          autoComplete="off"
           type="text"
           {...register("name")}
         />
@@ -42,6 +43,7 @@ export default function SignUp() {
         <input
           className="handleInput"
           placeholder="Email"
+          autoComplete="off"
           type="email"
           {...register("email")}
         />
@@ -49,25 +51,24 @@ export default function SignUp() {
         <input
           className="handleInput"
           placeholder="Password"
-          type="password"
+          autoComplete="off"
+          type="text"
           {...register("password")}
         />
         <p className="inputError">{errors.password?.message}</p>
-        <span className="signUpButton">
+        <div className="signUpButton">
           <Button disabled={false} value={"Sign up"} />
-        </span>
+        </div>
       </form>
 
       <div className="centerPositionColumn">
         <span className="singInQuestion">
-          {" "}
           Already have an account?
           <Link to="/login" className="singInLink">
             Log in
           </Link>
         </span>
         <span className="privacySpan">
-          {" "}
           By continuing, you are indicating that you accept our <br />
           Terms of Service and Privacy Policy.
         </span>

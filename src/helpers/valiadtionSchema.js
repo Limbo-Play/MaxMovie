@@ -2,25 +2,19 @@ import * as yup from "yup";
 
 export const loginSchema = yup
   .object({
-    email: yup.string().email("Not valid email").required("Email is required"),
-    password: yup
-      .string()
-      .min(6, "Min length is 6 symbols")
-      .max(12, "Max length is 12 symbols")
-      .matches(/([a-zA-Z0-9]{6,})/, "Not valid password")
-      .required("Password is required"),
+    email: yup.string().email("Not valid email"),
   })
   .required();
 
 export const signUpSchema = yup
   .object({
-    name: yup.string().min(3, "Min 3 symbol"),
+    name: yup.string().min(3, "Min 3 symbol").max(20, "Max 20 symbol").required("Name is required"),
     email: yup.string().email("Not valid email").required("Email is required"),
     password: yup
       .string()
       .min(6, "Min length is 6 symbols")
-      .max(12, "Max length is 12 symbols")
-      .matches(/([a-zA-Z0-9]{6,})/, "Not valid password")
+      .max(20, "Max length is 20 symbols")
+      .matches(/^[A-Za-z0-9]+$/, "Not valid password")
       .required("Password is required"),
   })
   .required();
